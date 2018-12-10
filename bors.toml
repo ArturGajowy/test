@@ -2,6 +2,10 @@ status = [
   "continuous-integration/drone/push"
 ]
 
+pr_status = [
+ "continuous-integration/drone/pr"
+]
+
 # Ensure that reviewers (all of us!) can't merge their own PRs without review.
 # This is possible, because Github doesn't allow self-review.
 # required_approvals = 1
