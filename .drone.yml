@@ -6,6 +6,8 @@ branches:
   - master
   - release-*
   - testing*
+  - trying
+  - staging
 
 steps:
 - name: test
