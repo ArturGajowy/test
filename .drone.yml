@@ -5,7 +5,8 @@ steps:
 - name: test
   image: alpine/git
   commands:
-  - echo "it works!"
+  - echo "Sleeping 30 s"
+  - sleep 30
   # fail the build if the last commit message contains `ci:fail`
   - git log -1 --oneline | grep -v 'ci:fail'
   when:
