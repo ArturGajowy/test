@@ -1,15 +1,14 @@
 kind: pipeline
 name: default
 
-branches:
-  - dev
-  - master
-  - release-*
-  - testing*
-
 steps:
 - name: test
   image: alpine
   commands:
   - echo "it works!"
-  
+  when:
+    branches:
+    - dev
+    - master
+    - release-*
+    - testing*
