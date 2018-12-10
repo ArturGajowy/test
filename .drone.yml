@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: test
-  image: alpine
+  image: alpine/git
   commands:
   - echo "it works!"
   # fail the build if the last commit message contains `ci:fail`
