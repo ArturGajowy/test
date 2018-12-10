@@ -1,6 +1,12 @@
 kind: pipeline
 name: default
 
+branches:
+  - dev
+  - master
+  - release-*
+  - testing*
+
 steps:
 - name: test
   image: alpine
